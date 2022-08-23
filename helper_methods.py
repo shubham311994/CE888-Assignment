@@ -84,13 +84,10 @@ def get_lightgbm_params():
     :return: params dictionary
     """
     param_grid = {
-        "n_estimators": [200, 300, 500, 700],
+        "n_estimators": [300, 500, 700, 1000],
         "learning_rate": [0.01, 0.3],
         "num_leaves": [20, 40, 60],
-        "max_depth": [3, 6, 9, 12],
-        "min_gain_to_split": [3, 6, 9, 12],
-        "bagging_fraction": [0.05, 0.1, 0.5, 0.75, 0.95],
-        "feature_fraction": [0.05, 0.1, 0.5, 0.75, 0.95]
+        "max_depth": [-1, 3, 6, 9],
     }
 
     return param_grid
@@ -124,12 +121,12 @@ def get_random_forest_params() -> dict:
     Define and return the grid search params for Random Forest.
     :return: params dictionary
     """
-    parameters = {"n_estimators": [100, 200, 300, 400, 500],
-                  "criterion": ['gini', 'entropy'],
-                  "max_depth": range(2, 20, 1),
-                  "min_samples_leaf": range(1, 11, 1),
-                  "min_samples_split": range(2, 11, 1),
-                  "max_features": ['auto', 'log2']}
+    parameters = parameters = {"n_estimators": [200, 300, 500, 700],
+                               "criterion": ['gini', 'entropy'],
+                               "max_depth": [None, 15, 20],
+                               "min_samples_leaf": [1, 3, 9],
+                               "min_samples_split": [2, 4, 6],
+                               "max_features": ['auto', 'log2']}
 
     return parameters
 
