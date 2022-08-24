@@ -46,4 +46,18 @@ Y:1, 0 (whether the coupon is accepted)
 <a id="1">[1]</a> Wang, T., Rudin, C., Doshi-Velez, F., Liu, Y., Klampfl, E., & MacNeille, P. (2017). A Bayesian Framework for Learning Rule Sets for Interpretable Classification. J. Mach. Learn. Res., 18, 70:1-70:37.
 [https://jmlr.org/papers/volume18/16-003/16-003.pdf]
 
+## Code Details
+The code was run on University's HPC systems, which is why there are both .py files 
+and Notebook files. The Notebook folder contains the 3 files each referring to the
+model used for solution.
+The .py files are organized in simple manner with main_file.py as the main running 
+file and utilizing the helper_methods.py file.
+
+##### .py file usage:
+python3 main_file.py
+
+
+### Other files detail
+The run on gpu files are the logs of the jobs run on the GPU for finding the best parameters
+using the GridSearchCV.
  
