@@ -77,22 +77,6 @@ def get_xgboost_params() -> dict:
     return xgboost_params
 
 
-def get_lightgbm_params():
-    """
-    Define and return lightgbm parameters for grid search.
-
-    :return: params dictionary
-    """
-    param_grid = {
-        "n_estimators": [300, 500, 700, 1000],
-        "learning_rate": [0.01, 0.3],
-        "num_leaves": [20, 40, 60],
-        "max_depth": [-1, 3, 6, 9],
-    }
-
-    return param_grid
-
-
 def read_data(path: str) -> pd.DataFrame:
     """
     Read the data at the given path using pandas.
@@ -129,6 +113,22 @@ def get_random_forest_params() -> dict:
                                "max_features": ['auto', 'log2']}
 
     return parameters
+
+
+def get_lightgbm_params():
+    """
+    Define and return lightgbm parameters for grid search.
+
+    :return: params dictionary
+    """
+    param_grid = {
+        "n_estimators": [300, 500, 700, 1000],
+        "learning_rate": [0.01, 0.3],
+        "num_leaves": [20, 40, 60],
+        "max_depth": [-1, 3, 6, 9],
+    }
+
+    return param_grid
 
 
 def get_logistic_params():
