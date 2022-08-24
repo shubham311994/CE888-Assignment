@@ -125,7 +125,7 @@ def get_lightgbm_params():
         "n_estimators": [300, 500, 700, 1000],
         "learning_rate": [0.01, 0.3],
         "num_leaves": [20, 40, 60],
-        "max_depth": [-1, 3, 6, 9],
+        "max_depth": [-1, 3, 6, 9]
     }
 
     return param_grid
