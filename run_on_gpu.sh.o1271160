@@ -1,0 +1,36 @@
+**** HOST: gpu-1-103.local
+**** GRID ENGINE GPU ASSIGNMENT: your job has been assigned GPU device: 0
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already up-to-date: sklearn in /home/sc21703/.local/lib/python3.6/site-packages (0.0)
+Requirement already satisfied, skipping upgrade: scikit-learn in /usr/local/miniconda3/envs/tensorflow36env/lib/python3.6/site-packages (from sklearn) (0.23.2)
+Requirement already satisfied, skipping upgrade: numpy>=1.13.3 in /usr/local/miniconda3/envs/tensorflow36env/lib/python3.6/site-packages (from scikit-learn->sklearn) (1.19.2)
+Requirement already satisfied, skipping upgrade: threadpoolctl>=2.0.0 in /usr/local/miniconda3/envs/tensorflow36env/lib/python3.6/site-packages (from scikit-learn->sklearn) (2.1.0)
+Requirement already satisfied, skipping upgrade: joblib>=0.11 in /usr/local/miniconda3/envs/tensorflow36env/lib/python3.6/site-packages (from scikit-learn->sklearn) (0.17.0)
+Requirement already satisfied, skipping upgrade: scipy>=0.19.1 in /usr/local/miniconda3/envs/tensorflow36env/lib/python3.6/site-packages (from scikit-learn->sklearn) (1.5.2)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already up-to-date: lightgbm in /home/sc21703/.local/lib/python3.6/site-packages (3.3.2)
+Requirement already satisfied, skipping upgrade: wheel in /usr/local/miniconda3/envs/tensorflow36env/lib/python3.6/site-packages (from lightgbm) (0.35.1)
+Requirement already satisfied, skipping upgrade: scikit-learn!=0.22.0 in /usr/local/miniconda3/envs/tensorflow36env/lib/python3.6/site-packages (from lightgbm) (0.23.2)
+Requirement already satisfied, skipping upgrade: numpy in /usr/local/miniconda3/envs/tensorflow36env/lib/python3.6/site-packages (from lightgbm) (1.19.2)
+Requirement already satisfied, skipping upgrade: scipy in /usr/local/miniconda3/envs/tensorflow36env/lib/python3.6/site-packages (from lightgbm) (1.5.2)
+Requirement already satisfied, skipping upgrade: threadpoolctl>=2.0.0 in /usr/local/miniconda3/envs/tensorflow36env/lib/python3.6/site-packages (from scikit-learn!=0.22.0->lightgbm) (2.1.0)
+Requirement already satisfied, skipping upgrade: joblib>=0.11 in /usr/local/miniconda3/envs/tensorflow36env/lib/python3.6/site-packages (from scikit-learn!=0.22.0->lightgbm) (0.17.0)
+##################################
+Best Model Parameter with score
+Best Parameters -> {'learning_rate': 0.01, 'max_depth': -1, 'n_estimators': 1000, 'num_leaves': 60}
+Best Score -> 0.7070136573918706
+##################################
+##################################
+Taking the best parameters from Grid Search and building the model.
+##################################
+                 precision    recall  f1-score   support
+
+           0       0.76      0.66      0.71      1387
+           1       0.76      0.83      0.80      1784
+
+    accuracy                           0.76      3171
+   macro avg       0.76      0.75      0.75      3171
+weighted avg       0.76      0.76      0.76      3171
+
+##################################
+##################################
