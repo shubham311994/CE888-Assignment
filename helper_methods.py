@@ -121,7 +121,7 @@ def get_random_forest_params() -> dict:
     Define and return the grid search params for Random Forest.
     :return: params dictionary
     """
-    parameters = parameters = {"n_estimators": [200, 300, 500, 700],
+    parameters = {"n_estimators": [200, 300, 500, 700],
                                "criterion": ['gini', 'entropy'],
                                "max_depth": [None, 15, 20],
                                "min_samples_leaf": [1, 3, 9],
@@ -138,7 +138,7 @@ def get_logistic_params():
     """
     param_grid = [
         {'penalty': ['l2', 'none'],
-         'C': np.logspace(-4, 4, 20),
+         'C': [0.075,  0.5, 1, 10],
          'solver': ['newton-cg', 'liblinear'],
          'max_iter': [100, 1000, 2500, 5000]
          }
