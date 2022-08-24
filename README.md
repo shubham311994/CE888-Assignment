@@ -54,8 +54,9 @@ The .py files are organized in simple manner with main_file.py as the main runni
 file and utilizing the helper_methods.py file.
 
 ##### .py file usage:
+```bash
 python3 main_file.py
-
+```
 
 ### Other files detail
 The run on gpu files are the logs of the jobs run on the GPU for finding the best parameters
