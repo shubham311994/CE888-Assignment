@@ -1,0 +1,22 @@
+/usr/local/gpuallocation.sh: line 80: [:  : integer expression expected
+expr: syntax error
+/usr/local/gpuallocation.sh: line 129: -1: substring expression < 0
+**** GRID ENGINE GPU ASSIGNMENT: your job has been assigned GPU device(s): 
+##################################
+Best Model Parameter with score
+Best Parameters -> {'criterion': 'gini', 'max_depth': 20, 'max_features': 'auto', 'min_samples_leaf': 9, 'min_samples_split': 3, 'n_estimators': 500}
+Best Score -> 0.692219338608357
+##################################
+##################################
+Taking the best parameters from Grid Search and building the model.
+##################################
+              precision    recall  f1-score   support
+
+           0       0.77      0.64      0.70      1387
+           1       0.75      0.85      0.80      1784
+
+    accuracy                           0.76      3171
+   macro avg       0.76      0.75      0.75      3171
+weighted avg       0.76      0.76      0.75      3171
+##################################
+##################################
